@@ -1,0 +1,361 @@
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.myName {
+    color: #8DE1D2;
+    margin-left: 20px;
+    font-size: 30px;
+}
+  
+nav {
+    flex: 1;
+}
+  
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+li {
+    margin-left: 75px;
+    color: #F1F1F1
+}
+
+/* HERO */
+.heroImg {
+    text-align: center;
+}
+  
+.content {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+  
+
+/* UX SKILLS */
+.uxSkills h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uxSkills {
+    margin: 100px;
+    margin-bottom: 100px;
+}
+
+.uxSkills h5 {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.uxSkills .gridContainer {
+    display: grid;
+    margin-bottom: 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-areas:
+    "uxTitle uxTitle uxTitle uxTitle"
+    "uRimage vDimage fImage aIimage"
+    "userResearch visualDesign figma adobeIllustrator"
+    ;
+}
+
+.uxTitle {
+    grid-area: uxTitle;
+}
+
+.uRimage {
+    grid-area: uRimage;
+}
+
+.vDimage {
+    grid-area: vDimage;
+}
+
+.fImage {
+    grid-area: fImage;
+}
+
+.aIimage {
+    grid-area: aIimage;
+}
+
+.userResearch {
+    grid-area: userResearch;
+}
+
+.visualDesign {
+    grid-area: visualDesign;
+}
+
+.figma {
+    grid-area: figma;
+}
+
+.adobeIllustrator {
+    grid-area: adobeIllustrator;
+}
+
+@media only screen and (max-width: 600){
+    .uxSkills .gridContainer {
+        display: grid;
+        margin-bottom: 250px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "uxTitle uxTitle"
+        "uRimage vDimage"
+        "userResearch visualDesign"
+        "fImage aIimage"
+        "figma adobeIllustrator"
+        ;
+    }
+}
+
+/* MY WORK */
+.myWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myWork .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    "title title title"
+    "tLine tLine tLine"
+    "rr rr image"
+    "rs rs image"
+    "duration tools image"
+    "weeks mifi image"
+    "bLine bLine bLine"
+    ;
+}
+
+.title {
+    grid-area: title;
+    margin-bottom: -50px;
+}
+
+.topLine hr {
+    display: none;
+}
+
+.topLine {
+    grid-area: tLine;
+    margin: 30px; 
+    width: 100%;
+    background-color: #8DE1D2;
+    height: 1px;
+}
+
+
+.caseTitle {
+    grid-area: rr;
+}
+
+.summary {
+    grid-area: rs;
+}
+
+.rrImage {
+    grid-area: image;
+}
+
+.duration {
+    grid-area: duration;
+}
+
+.durationtime {
+    grid-area: weeks;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.toolNames {
+    grid-area: mifi;
+}
+
+.bottomLine hr {
+    display: none;
+}
+
+.bottomLine {
+    grid-area: bLine;
+    margin: 30px;
+    width: 100%;
+    background-color: #8DE1D2;
+    height: 1px;
+}
+
+
+.myWork img {
+    width: 500px;
+}
+
+@media only screen and (max-width: 600) {
+    .myWork .gridContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "title title"
+        "tLine tLine"
+        "image image"
+        "rr rr"
+        "rs rs"
+        "duration tools"
+        "weeks mifi"
+        "bLine bLine bLine"
+        ;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8DE1D2;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 75px;
+
+  }
+  
+  .footer ul {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+  }
+  
+  .footer ul li {
+    margin-right: 10px;
+    color: #1B1919
+  }
+  
+  .footer img p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .socialMedia img {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-bottom: -10px;
+  }
+  .footer p {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: -5px;
+    font-size: 14px;
+  }
+
+  /* CALL TO ACTION SECTION */
+
+.button {
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color:#8DE1D2;
+    width: 10%;
+    color: #1B1919;
+    border-bottom: #F1F1F1;
+    height: 10px;
+    margin-left: 525px;
+    margin-top: -50px;
+}
+
+
+
+.bottomText {
+    margin-bottom: 200px;
+}
+
+
+  /* change layout so copyright is on left of screen and menu items are in middle? */
+
+/* HOMEPAGE PROPERTIES*/
+.homepage {
+    background-image: url("/images/homepagebackground.png");
+    background-repeat: none;
+    background-size: 100%;
+    background-position: top;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: left;
+    color: #F1F1F1;
+    margin-top: 150px;
+    margin-bottom: -50px;
+}
+  
+h1 {
+    font-size: 80px;
+    text-align: left;
+    color: #F1F1F1;
+    margin-bottom: 20px;
+}
+  
+h3 {
+    font-size: 22px;
+    display: inline;
+    color: #F1F1F1;
+    vertical-align: middle;
+    margin-top: -100px;
+}
+
+h4 {
+    font-size: 26px;
+    display: inline;
+    color: #f1f1f1;
+    vertical-align: middle;
+    margin-top: -100px;
+}
+
+h5 {
+    font-size: 18px;
+    display: inline;
+    color: #f1f1f1;
+    vertical-align: middle;
+    margin-top: -100px;
+}
+
+h6 {
+    font-size: 12px;
+    display: inline;
+    color: #f1f1f1;
+    vertical-align: middle;
+    margin-top: -100px;
+}
+  
+.content hr {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin-top: -45px;
+    margin-bottom: 250px;
+    margin-left: 320px;
+    margin-right: 100px;
+    background-color: #8DE1D2;
+    height: 1px;
+    border: #8DE1D2;
+}
